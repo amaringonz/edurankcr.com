@@ -4,7 +4,7 @@ import type { ComponentProps } from 'react';
 
 type SearchBarProps = {} & ComponentProps<typeof Input>;
 
-const SearchBar = ({ ...props }: SearchBarProps) => {
+const Search = ({ ...props }: SearchBarProps) => {
   return (
     <Input
       leftSection={<IconSearch />}
@@ -16,4 +16,4 @@ const SearchBar = ({ ...props }: SearchBarProps) => {
   );
 };
 
-export { SearchBar };
+export { Search };

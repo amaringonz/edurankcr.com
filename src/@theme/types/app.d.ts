@@ -1,5 +1,6 @@
 import type { getTranslations } from 'next-intl/server';
 import type { ReactNode } from 'react';
+import type { createFormatter } from 'use-intl';
 
 import type en from '../../messages/en.json';
 /* eslint-disable ts/consistent-type-definitions */
@@ -44,4 +45,13 @@ type IDictionary = {
   dictionary: Awaited<ReturnType<typeof getTranslations>>;
 };
 
-export { IDictionary, ILayout, IMeta, IPageLayout, IProviders, IRootLayout, Locale, Messages };
+type IFormatter = {
+  formater: Awaited<ReturnType<typeof createFormatter>>;
+};
+
+type IComponent = {
+  children: Children;
+  dictionary?: Awaited<ReturnType<typeof getTranslations>>;
+};
+
+export { IComponent, IDictionary, IFormatter, ILayout, IMeta, IPageLayout, IProviders, IRootLayout, Locale, Messages };

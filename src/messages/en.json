@@ -6,6 +6,12 @@
     }
   },
   "UI": {
+    "Helpers": {
+      "User": {
+        "action_review": "wrote a review",
+        "action_read_more": "Read more"
+      }
+    },
     "Navigation": {
       "Explore": {
         "label": "Explore",
@@ -21,7 +27,8 @@
       }
     },
     "Heading": {
-      "hero_cta": "Find Trusted Educational Reviews in Costa Rica"
+      "hero_cta": "Find Trusted Educational Reviews in Costa Rica",
+      "last_activity": "Last Activity on EduRankCR"
     },
     "Input": {
       "Search": {

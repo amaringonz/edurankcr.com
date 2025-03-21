@@ -5,7 +5,7 @@ import { cva, cx } from 'class-variance-authority';
 import type { ComponentProps, FC } from 'react';
 import { memo } from 'react';
 
-const linkVariants = cva('', {
+const linkVariants = cva('w-fit', {
   variants: {
     userCursor: { pointer: 'cursor-pointer' },
     userSelect: { none: 'select-none' },
@@ -26,6 +26,7 @@ const Link: FC<LinkProps> = memo(({
   rel,
   title,
   id,
+  text,
   ...props
 }) => {
   const computedRel = target === '_blank' ? 'noopener noreferrer' : rel;
@@ -44,7 +45,7 @@ const Link: FC<LinkProps> = memo(({
       {...props}
     >
       <Text
-        {...props.text}
+        {...text}
       >
         {props.children}
       </Text>

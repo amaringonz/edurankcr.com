@@ -11,6 +11,7 @@ const Section: FC<SectionProps> = memo(({
     width="full"
     paddingY="section"
     paddingX="section"
+    gap="2xl"
     as="section"
     {...props}
   />
